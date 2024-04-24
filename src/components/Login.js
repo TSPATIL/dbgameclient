@@ -112,7 +112,7 @@ export default function Login({ login, handleLoginView }) {
         updateProfile(auth.currentUser, {
           displayName: credentials.name
         })
-        const response = await fetch('http://127.0.0.1:5000/api/auth/signup', {
+        const response = await fetch(`http://${process.env.REACT_APP_SERVER_IP}:${process.env.REACT_APP_PORT}/api/auth/signup`, {
           method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -144,7 +144,7 @@ export default function Login({ login, handleLoginView }) {
           setEmailVerifyView(true);
         }
         setLoginSihnupTransfer(true);
-        const response = await fetch('http://127.0.0.1:5000/api/auth/login', {
+        const response = await fetch(`http://${process.env.REACT_APP_SERVER_IP}:${process.env.REACT_APP_PORT}/api/auth/login`, {
           method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -181,7 +181,7 @@ export default function Login({ login, handleLoginView }) {
         setCredentials({ email: "", password: "" });
         setLoginSihnupTransfer(true);
         handleLoginView();
-        const response = await fetch('http://127.0.0.1:5000/api/auth/signup', {
+        const response = await fetch(`http://${process.env.REACT_APP_SERVER_IP}:${process.env.REACT_APP_PORT}/api/auth/signup`, {
           method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -218,7 +218,7 @@ export default function Login({ login, handleLoginView }) {
         setCredentials({ email: "", password: "" });
         setLoginSihnupTransfer(true);
         handleLoginView();
-        const response = await fetch('http://127.0.0.1:5000/api/auth/signup', {
+        const response = await fetch(`http://${process.env.REACT_APP_SERVER_IP}:${process.env.REACT_APP_PORT}/api/auth/signup`, {
           method: "POST",
             headers: {
                 "Content-Type": "application/json"

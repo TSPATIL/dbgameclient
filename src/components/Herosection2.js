@@ -1,9 +1,9 @@
 import React from "react";
-import bgImage from "src/assets/backgroundhome.png"
+// import bgImage from "src/assets/backgroundhome.png"
 
 export default function Herosection2() {
   return (
-    <div className="h-[690px] bg-cover bg-no-repeat flex justify-center items-center" style={{backgroundImage: `url(${bgImage})`}}>
+    <div className="h-[690px] bg-cover bg-no-repeat flex justify-center items-center bg-white">
       <section className="relative">
         <div className="relative pt-24 lg:pt-28">
           <div className="mx-auto px-6 max-w-7xl md:px-12">

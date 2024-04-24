@@ -11,7 +11,7 @@ export default function Contact() {
     }
     const handleSubmit = async (e)=>{
         e.preventDefault();
-        const response = await fetch('http://127.0.0.1:5000/api/contact/sendcontact', {
+        const response = await fetch(`http://${process.env.REACT_APP_SERVER_IP}:${process.env.REACT_APP_PORT}/api/contact/sendcontact`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

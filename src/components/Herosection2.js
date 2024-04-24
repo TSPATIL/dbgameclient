@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "E:/TE Project/MiniProject/client/src/assets/backgroundhome.png"
+import bgImage from "src/assets/backgroundhome.png"
 
 export default function Herosection2() {
   return (
